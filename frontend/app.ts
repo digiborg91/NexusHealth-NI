@@ -1,10 +1,9 @@
 import { ethers } from "ethers";
 import MedicalRecordsABI from "../artifacts/contracts/MedicalRecords.sol/MedicalRecords.json";
 
-// Use 'any' for the ABI type to avoid type errors
-const abi: any = MedicalRecordsABI.abi; // You can also define a more specific type if needed
+const abi: any = MedicalRecordsABI.abi;
 
-const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS"; // Replace with your deployed contract address
+const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; 
 
 async function addRecord() {
   const patientId = (document.getElementById("patientId") as HTMLInputElement).value;

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run scripts/deploy.ts --network polygon_mumbai"
+    "deploy": "npx hardhat run scripts/deploy.ts --network polygon_mumbai",
+    "Amoy": "npx hardhat run scripts/deploy.ts"
   },
   "keywords": ["blockchain", "medical", "polygon", "healthtech"],
   "author": "Your Name",

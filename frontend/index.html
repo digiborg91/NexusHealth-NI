@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>NexusHealth NI - Blockchain Medical Records</title>
-  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.umd.min.js"></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
-  <h1>NexusHealth NI - Blockchain Medical Records</h1>
-  <input id="patientId" placeholder="Patient ID">
-  <input id="dataHash" placeholder="Data Hash (IPFS)">
-  <button onclick="addRecord()">Add Record</button>
-  <button onclick="getRecords()">Get Records</button>
-  <div id="records"></div>
-
-  <script src="app.js"></script>
+    <h1>Medical Records DApp</h1>
+    <div>
+        <input type="text" id="patientId" placeholder="Patient ID" />
+        <input type="text" id="dataHash" placeholder="Data Hash" />
+        <button id="addrecordBtn" onclick="addRecord()">Add Record</button>
+    </div>
+    <div>
+        <button id="getrecordBtn" onclick="getRecords()">Get Records</button>
+        <div id="records"></div>
+    </div>
 </body>
 </html>
